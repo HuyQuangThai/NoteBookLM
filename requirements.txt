@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+langgraph
+langchain-text-splitters
+langchain_google_genai
+langchain_community
+chromadb
+pymupdf
+python-docx
+python-dotenv
+langchain-chroma
+langchain-core
+langchain-ollama
+python-multipart
+pydantic
+fitz
+langchain-openai
