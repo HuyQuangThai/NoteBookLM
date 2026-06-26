@@ -6,6 +6,7 @@ class ChatState(TypedDict):
     messages: Annotated[List[BaseMessage], add_messages]
     doc_ids: List[str]
     chunks: List[str]
-    sources: List[str]
+    sources: List[dict]
     answer: str
+    citations: List[dict]
     error: Optional[str]

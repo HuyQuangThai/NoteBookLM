@@ -69,10 +69,10 @@ def embed_node(state: IngestionState) -> dict:
     if not chunks:
         return {"error" : "No chunks provided"}
     try:
-        doc_id = chroma_service.add_documents(chunks, doc_id, file_path)
+        result = chroma_service.add_documents(chunks, doc_id, file_path)
     except Exception as e:
         return { "error" : str(e)}
-    return {"doc_id" : doc_id, "error" : None}
+    return {"doc_id" : result["doc_id"], "error" : None}
 
 
 
